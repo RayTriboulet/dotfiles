@@ -7,8 +7,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible                            " Fix for old vi bugs
-execute pathogen#infect()
-                                            " https://github.com/tpope/vim-pathogen
+execute pathogen#infect()                   " Pathogen bundler
 set encoding=utf-8                          " International chars
 set modelines=0                             " Turns off modelines
 set history=500                             " Default is 20!
