@@ -6,8 +6,11 @@
 """           ^^^^^^^^^^^^^^^^^^^^            """
 """""""""""""""""""""""""""""""""""""""""""""""""
 
+" TEST-SCRIPT
+
 set nocompatible                            " Fix for old vi bugs
-execute pathogen#infect()                   " Pathogen bundler
+execute pathogen#infect()
+                                            " https://github.com/tpope/vim-pathogen
 set encoding=utf-8                          " International chars
 set modelines=0                             " Turns off modelines
 set history=500                             " Default is 20!

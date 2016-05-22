@@ -94,3 +94,13 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Custom Aliases
+today() {
+  echo -n "Today's date is: "
+  date +"%A, %B %-d, %Y"
+}
+
+cpa() {
+  ~/bin/back_n_forth
+}
