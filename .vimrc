@@ -48,6 +48,17 @@ set columns=80                              " 80 Columns == good practice
 highlight ColorColumn ctermbg=magenta
                                             " EOL color
 call matchadd('ColorColumn', '\%81v', 100)  " 81st line for color
+autocmd vimenter * NERDTree                 " Execute NERDTree at startup
+
+" Execute NERDTree even if VIM is initialized without specifying a file
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Open NERDTree with Ctrl+n
+map <C-n> :NERDTreeToggle<CR>
+
+" Close VIM with :q even if NERDTree is the only tab left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Unmap the arrow keys {
   no <down> <Nop>
@@ -93,3 +104,12 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 " }
+
+" Syntastic recommended setup
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
