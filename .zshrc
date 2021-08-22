@@ -9,10 +9,10 @@
 #
 ################################################
 
-export ZSH=/home/ariovistus/.oh-my-zsh
-ZSH_THEME="clean"
+export ZSH="/home/trib/.oh-my-zsh"
+ZSH_THEME="agnoster"
 
-export GOPATH=$HOME/gowork
+# export GOPATH=$HOME/gowork
 
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="dd/MMM/yyyy"
@@ -20,35 +20,33 @@ HIST_STAMPS="dd/MMM/yyyy"
 plugins=(
          git
          colored-man-pages
-         command-not-found
-         tmux
-         vundle
+#        tmux
+#        vundle
          gitflow
          github
-         brew
-         bundler
-         tmuxinator
-         sudo
-         vi-mode
+#        bundler
+#        tmuxinator
+         zsh-autosuggestions  # for zsh-autosuggestions see https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+	web-search           # for web-search info see https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search
+	vi-mode
+	brew
+	command-not-found
 )
 
-export PATH="$HOME/gowork/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:$HOME/bin:$HOME/gowork:$PATH"
-
-export GOPATH=$HOME/gowork
-
 source $ZSH/oh-my-zsh.sh
+export PATH="/usr/local/bin:$PATH"
 
 # Custom Aliases
-today() {
-  echo -n "Today's date is: "
-  date +"%A, %B %-d, %Y"
-}
+# today() {
+#   echo -n "Today's date is: "
+#   date +"%A, %B %-d, %Y"
+# }
 
-cpa() {
-  ~/bin/back_n_forth
-}
+# cpa() {
+#   ~/bin/back_n_forth
+# }
 
-alias vimgo='vim -u ~/.vimrc.go'
+# alias vimgo='vim -u ~/.vimrc.go'
 
 # Git Aliases
 alias gs='git status '
