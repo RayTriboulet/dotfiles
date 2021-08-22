@@ -96,11 +96,11 @@ if ! shopt -oq posix; then
 fi
 
 # Custom Aliases
-today() {
-  echo -n "Today's date is: "
-  date +"%A, %B %-d, %Y"
-}
+# today() {
+#   echo -n "Today's date is: "
+#   date +"%A, %B %-d, %Y"
+# }
 
-cpa() {
-  ~/bin/back_n_forth
-}
+# cpa() {
+#   ~/bin/back_n_forth
+# }
