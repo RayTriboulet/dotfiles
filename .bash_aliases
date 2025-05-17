@@ -16,3 +16,13 @@ df="df -h" \
 du="du -h -d 1" \
 k="killall" \
 p="ps aux | grep $1" \
+
+# Git Aliases
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
