@@ -13,7 +13,7 @@ set clipboard=unnamedplus,unnamed           " Fallback clipboard registers to br
 " 2. CORE INTERACTIVE DISPLAY CONFIGURATIONS
 " ==============================================================================
 set ruler                                   " Show transient line, column, and relative position in bottom right
-set number                                  " Show absolute line numbers on the left sidebar display grid
+set relativenumber                          " Show relative line numbers on the left sidebar display grid
 set showcmd                                 " Show incomplete commands and selection sizes in the status area
 set visualbell                              " Use a visual screen flash instead of an audible beep for warnings
 set noerrorbells                            " Ensure no annoying system audio beeps occur on tracking errors
