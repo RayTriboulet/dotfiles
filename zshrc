@@ -60,3 +60,11 @@ bindkey "^[[B" history-search-forward       # Arrow DOWN steps downward across h
 # 6. RETRO 1990S MATRIX GREEN USER PROMPT
 # ==============================================================================
 PROMPT='%F{22}[%D{%H:%M}] %F{46}%n%F{22}@%F{46}%m %F{22}[%F{46}%~%F{22}] %F{10}❯%f '
+
+# ==============================================================================
+# 7. GO PATHS
+# ==============================================================================
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
