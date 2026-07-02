@@ -42,6 +42,6 @@ alias ga="git add"                          # Stage dynamic asset additions to l
 alias gb="git branch"                       # Query target branch allocations configured within regional trees
 alias gc="git commit"                       # Seal structural track changes down to chronological log matrices
 alias gd="git diff"                         # Unveil tracking variations between live trees and buffer states
-alias go="git checkout"                     # Seamlessly transition working paths across separate tree lines
+# alias go="git checkout"                     # Seamlessly transition working paths across separate tree lines
 alias gk="gitk --all&"                      # Launch external graphical history maps as detached background tasks
 alias gx="gitx --all"                       # Alternative macOS graphic development branch visualization view
