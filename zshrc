@@ -47,7 +47,6 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} ma=46\;30
 # 5. KEYBOARD MAP RE-BINDINGS (TERMINAL CONTROLS)
 # ==============================================================================
 stty stop undef                             # Terminate active lock screens caused by hitting Ctrl+S accidentally
-bindkey -e                                  # Force baseline standard Emacs terminal movement standard parameters
 bindkey "^a" beginning-of-line              # Move cursor instantly to the front boundary of current command string
 bindkey "^e" end-of-line                    # Jump cursor instantly to the end boundary of the active instruction
 bindkey "^k" kill-line                      # Delete character array completely from cursor point to line terminus
