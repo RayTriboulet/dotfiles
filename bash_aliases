@@ -35,13 +35,6 @@ alias k="killall"                           # Broad scope process termination ex
 p() { ps aux | grep -i "$1"; }              # Dynamic case-insensitive target execution tracking filter function
 
 # ==============================================================================
-# 4. MINIMALIST HISTORICAL REPOSITORY SHORTCUTS (GIT ARRAYS)
+# 4. Randoms
 # ==============================================================================
-alias gs="git status"                       # Display working tree state parameters inside current code blocks
-alias ga="git add"                          # Stage dynamic asset additions to local index arrays instantly
-alias gb="git branch"                       # Query target branch allocations configured within regional trees
-alias gc="git commit"                       # Seal structural track changes down to chronological log matrices
-alias gd="git diff"                         # Unveil tracking variations between live trees and buffer states
-# alias go="git checkout"                     # Seamlessly transition working paths across separate tree lines
-alias gk="gitk --all&"                      # Launch external graphical history maps as detached background tasks
-alias gx="gitx --all"                       # Alternative macOS graphic development branch visualization view
+alias wtr="curl wttr.in"                    # weather check
